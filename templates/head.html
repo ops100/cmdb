@@ -1,95 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ {% load staticfiles %}
+
     <meta charset="UTF-8" name="referrer" content="always">
+
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/js/bootstrap.min.js"></script>
+    <link REL="SHORTCUT ICON" HREF="/static/images/favicon.ico"/>
+{#    left菜单#}
+    <script src="/static/js/adapter.js"></script> <!--rem适配js-->
+    <link rel="stylesheet" href="/static/css/base.css"> <!--初始化文件-->
+    <link rel="stylesheet" href="/static/css/menu.css"> <!--主样式-->
+    <script src="/static/js/menu.js"></script> <!--控制js-->
+
+	<script  type='text/javascript'>
+　　window.onload = function(){
+　　　　alert("页面加载完成====》onload");
+　　}
+	</script>
+
     {% block title %}
-        <title>CMDB</title>
+        <title>百昌运维平台 {{ user.username|default:"未登陆状态" }}</title>
     {% endblock %}
-    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
 
-{% block menu %}
+{% block liftmenu %}
 
-       <div id="switcher">
+<div id="menu">
+    <!--隐藏菜单-->
+    <div id="ensconce">
+        <h2>
+            <img src="/static/images/show.png" alt="">
+            国内各地景点
+        </h2>
+    </div>
 
-        <div class="center">
+    <!--显示菜单-->
+    <div id="open">
+        <div class="navH">
+            国内各地景点
+            <span><img class="obscure" src="/static/images/obscure.png" alt=""></span>
+        </div>
+        <div class="navBox">
             <ul>
-                <li class="title">
-                    <a href="/" class="logo"><img src="/content/images/preview/logo_light.png"></a>
-                </li>
-                <li class="logoTop">
-
-                    <a href="/item/6051">
-                        jquery+bootstrap左侧垂直菜单插件
-                    </a>
-                </li>
-                <div id="Device">
-                    <li class="device-monitor">
-                        <a href="javascript:" title="电脑浏览">
-                            <div class="icon-monitor">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="device-mobile">
-                        <a href="javascript:" title="平板电脑竖着浏览">
-                            <div class="icon-tablet">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="device-mobile">
-                        <a href="javascript:" title="平板电脑横着浏览">
-                            <div class="icon-mobile-1">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="device-mobile-2">
-                        <a href="javascript:" title="手机竖着浏览">
-                            <div class="icon-mobile-2">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="device-mobile-3">
-                        <a href="javascript:" title="手机横着浏览">
-                            <div class="icon-mobile-3">
-                            </div>
-                        </a>
-                    </li>
-                </div>
-                <li class="qrcode">
-                    <a href="javascript:"><i class="icon icon-sao"></i>扫二维码预览</a>
-                    <div class="qrcodepic">
-                        <div id="output"></div>
-                        <p>扫一扫，直接在手机上浏览</p>
+                <li>
+                    <h2 class="obtain">北京景点<i></i></h2>
+                    <div class="secondary">
+                        <h3>故宫</h3>
+                        <h3>十三陵</h3>
+                        <h3>圆明园</h3>
+                        <h3>长城</h3>
+                        <h3>雍和宫</h3>
+                        <h3>天坛公园</h3>
                     </div>
-
                 </li>
-                <li class="remove_frame">
-                    <a href="http://v.bootstrapmb.com/2019/9/8l4ur6051" title="移除框架">
-                    </a>
+                <li>
+                    <h2 class="obtain">南京景点<i></i></h2>
+                    <div class="secondary">
+                        <h3>栖霞寺</h3>
+                        <h3>夫子庙</h3>
+                        <h3>海底世界</h3>
+                        <h3>中山陵</h3>
+                        <h3>乌衣巷</h3>
+                        <h3>音乐台</h3>
+                    </div>
                 </li>
-
+                <li>
+                    <h2 class="obtain">上海景点<i></i></h2>
+                    <div class="secondary">
+                        <h3>东方明珠</h3>
+                        <h3>外滩</h3>
+                        <h3>豫园</h3>
+                        <h3>文庙</h3>
+                        <h3>世博园</h3>
+                        <h3>田子坊</h3>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="obtain">深圳景点<i></i></h2>
+                    <div class="secondary">
+                        <h3>华侨城</h3>
+                        <h3>观澜湖</h3>
+                        <h3>世界之窗</h3>
+                        <h3>东门老街</h3>
+                        <h3>七娘山</h3>
+                        <h3>光明农场</h3>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="obtain">广州景点<i></i></h2>
+                    <div class="secondary">
+                        <h3>白云山</h3>
+                        <h3>长隆</h3>
+                        <h3>黄花岗公园</h3>
+                        <h3>中山纪念堂</h3>
+                        <h3>华南植物园</h3>
+                        <h3>南沙湿地公园</h3>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
-    <div id="iframe-wrap">
+</div>
+<div  style="float:left">
+<div id="topmenu" style="float:left;overflow:hidden;background-color: #1acbfc">
+    {% block topmenu %}
 
-    </div>
-    <input type="hidden" id="id" value="6051" />
-    <input type="hidden" id="cate" value="107" />
-    <input type="hidden" id="viewurl" value="http://v.bootstrapmb.com/2019/9/8l4ur6051" />
-    <input type="hidden" id="defauldevice" value="0" />
-    <div id='message_container'>
-        <div id='error'></div>
-    </div>
+        topmenu
+    {% endblock %}
+</div>
+
+<div id="content" style="float:left">
+    {% block content %}
+
+        content
+    {% endblock %}
+</div>
 
 {% endblock %}
 
-
-
+</div>
 
 </body>
 </html>

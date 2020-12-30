@@ -1,11 +1,21 @@
-
 {% extends "head.html" %}
+{% block content %}
 
-{% block head %}
-<h1 style="background: antiquewhite">测试一下</h1>
+
+<div class="modal-dialog" style="margin-top: 10%;float:left">
+
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title text-center" id="myModalLabel">登录</h3>
+        </div>
+        <div class="modal-body">
+        <form action="/accounts/login/" method="post" class="form-horizontal">
+            {% csrf_token %}
+            {{ forms.as_p }}
+            <input type="submit">
+        </form>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
-
-{% block name %}
-    <span>主111页</span>
-{% endblock %}
-
