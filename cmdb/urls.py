@@ -18,6 +18,7 @@ from django.contrib import admin
 from . import views
 from apps.accounts.views import Account_Login,Account_Logout
 
+
 urlpatterns = [
     url(r'^$', views.index),
     url(r'test/', views.test),
