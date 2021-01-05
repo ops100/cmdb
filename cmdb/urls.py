@@ -20,8 +20,10 @@ from apps.accounts.views import Account_Login,Account_Logout
 
 urlpatterns = [
     url(r'^$', views.index),
+    url(r'test/', views.test),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('apps.accounts.urls')),
     url(r'login/', Account_Login),
+
     url(r'^logout/', Account_Logout),
 ]

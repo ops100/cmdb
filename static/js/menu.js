@@ -78,6 +78,9 @@ window.onload = function () {
             ensconce.style.display = "block";
         }, 350)
 
+        resizediv_marginLeft=300;
+
+        resizediv(resizediv_marginLeft)
     }
     //显示菜单
     var showC = document.querySelector("#ensconce h2");
@@ -88,6 +91,10 @@ window.onload = function () {
         }, 100)
 
     }
+
+    //初始化topmenu
+    resizediv_marginLeft=-300;
+    resizediv()
 }
 
 function getByClass(clsName, parent) {
@@ -121,4 +128,20 @@ function siblings(elem) {
         }
     }
     return r;
+}
+
+function resizediv(resizediv_marginLeft=0) {
+    //动态调整topmenu宽度
+    var winw= window.innerWidth;
+    var lefttopw=document.getElementById("leftmenu").offsetWidth;
+    var ensconcew=document.getElementById("ensconce").scrollWidth;
+    var topmenuw=winw-lefttopw;
+
+    if ( resizediv_marginLeft == 0) {
+        document.getElementById("topmenu").style.marginLeft= resizediv_marginLeft + "px";
+        document.getElementById("topmenu").style.width= (topmenuw - resizediv_marginLeft) + "px";
+    }else {    document.getElementById("topmenu").style.width=topmenuw + "px";}
+    // 打印宽度
+    var wlog = " winw: " + winw + " lefttopw: " + lefttopw + " topmenuw: "+  topmenuw + " ensconcew " + ensconcew + " resizediv_marginLeft: " + resizediv_marginLeft
+    console.log(wlog)
 }

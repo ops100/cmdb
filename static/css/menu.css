@@ -1,4 +1,4 @@
-#menu {
+#leftmenu {
   overflow: hidden;
   height: 100%;
   float: left;
@@ -9,7 +9,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-#menu #ensconce {
+#leftmenu #ensconce {
   /*隐藏菜单样式*/
   width: 0.35rem;
   height: 100%;
@@ -19,7 +19,7 @@
   position: relative;
   display: none;
 }
-#menu #ensconce h2 {
+#leftmenu #ensconce h2 {
   cursor: pointer;
   color: #fff;
   font-size: 0.24rem;
@@ -33,10 +33,10 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(0%, -50%);
 }
-#menu #ensconce h2 img {
+#leftmenu #ensconce h2 img {
   width: 52%;
 }
-#menu #open {
+#leftmenu #open {
   /*显示菜单样式*/
   width: 2.6rem;
   height: 100%;
@@ -48,7 +48,7 @@
   -o-transition: all 0.8s ease;
   -ms-transition: all 0.8s ease;
 }
-#menu #open .navH {
+#leftmenu #open .navH {
   height: 0.6rem;
   background-color: #44495a;
   line-height: 0.6rem;
@@ -58,7 +58,7 @@
   position: relative;
   box-sizing: border-box;
 }
-#menu #open .navH span {
+#leftmenu #open .navH span {
   position: absolute;
   top: 49%;
   right: 0;
@@ -71,28 +71,28 @@
   transform: translate(0, -50%);
   display: inline-block;
 }
-#menu #open .navH span .obscure {
+#leftmenu #open .navH span .obscure {
   width: 0.24rem;
 }
-#menu #open .navBox {
+#leftmenu #open .navBox {
   height: 100%;
   overflow-y: auto;
   padding-left: 0.05rem;
   padding-right: 0.07rem;
   margin-top: 0.1rem;
 }
-#menu #open .navBox ul li {
+#leftmenu #open .navBox ul li {
   background-color: #393c4a;
   cursor: pointer;
   margin-bottom: 4px;
 }
-#menu #open .navBox ul li .obtain {
+#leftmenu #open .navBox ul li .obtain {
 	background-color: #3889D4; 
 }
-#menu #open .navBox ul li .obtain:hover {
+#leftmenu #open .navBox ul li .obtain:hover {
 	background-color: #3D8332; 
 }
-#menu #open .navBox ul li h2 {
+#leftmenu #open .navBox ul li h2 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -105,7 +105,7 @@
   -o-transition: all 0.6s ease;
   -ms-transition: all 0.6s ease;
 }
-#menu #open .navBox ul li h2 i {
+#leftmenu #open .navBox ul li h2 i {
   position: absolute;
   top: 50%;
   right: 0.15rem;
@@ -125,14 +125,14 @@
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-#menu #open .navBox ul li h2 .arrowRot {
+#leftmenu #open .navBox ul li h2 .arrowRot {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-#menu #open .navBox ul li .secondary {
+#leftmenu #open .navBox ul li .secondary {
   overflow: hidden;
   height: 0;
   -webkit-transition: all 0.6s ease;
@@ -140,7 +140,7 @@
   -o-transition: all 0.6s ease;
   -ms-transition: all 0.6s ease;
 }
-#menu #open .navBox ul li .secondary h3 {
+#leftmenu #open .navBox ul li .secondary h3 {
   padding: 0.1rem 0;
     text-align: center;
     font-size: 0.13rem;
@@ -152,10 +152,10 @@
   -o-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
 }
-#menu #open .navBox ul li .secondary h3:hover {
+#leftmenu #open .navBox ul li .secondary h3:hover {
   background-color: #1acbfc;
 }
-#menu #open .navBox ul li .secondary .seconFocus {
+#leftmenu #open .navBox ul li .secondary .seconFocus {
   background-color: #1acbfc;
   -webkit-box-shadow: 3px 3px 3px #aa8c51;
   -moz-box-shadow: 3px 3px 3px #aa8c51;

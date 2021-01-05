@@ -15,6 +15,9 @@ var fontSize = 100/1080*width;
 
 html.style.fontSize = fontSize +'px';
 window.onresize = function(){
+    resizediv()
+
+
     var html = document.getElementsByTagName('html')[0];
 	/*取到屏幕的宽度*/
     var width = window.innerWidth;
@@ -28,6 +31,7 @@ window.onresize = function(){
     var fontSize = 100/1080 * width;
 	/*设置fontsize*/
     html.style.fontSize = fontSize +'px';
-};
 
+
+};
 

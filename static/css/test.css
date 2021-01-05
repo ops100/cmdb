@@ -1,0 +1,29 @@
+body{
+    min-width: 700px;
+}
+
+#menu {
+  overflow: hidden;
+  height: 100%;
+    width: 100px;
+  float: left;
+      background-color: #b8daff;
+border:5px solid;
+}
+#topmenu {
+    overflow: hidden;
+    height: 100%;
+    width: 500px;
+    float: left;
+    background-color: #1acbfc;
+    border:5px solid;
+}
+
+#content {
+    overflow: hidden;
+    height: 100%;
+    width: 80%;
+    float: left;
+    background-color: #b8daff;
+    border:5px solid;
+}
