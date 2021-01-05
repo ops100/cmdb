@@ -1,0 +1,2 @@
+[2021-01-05 10:49:25,598][Thread-1:3008][task_id:root][views.py:10][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 14:14:50,167][Thread-199:2672][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
