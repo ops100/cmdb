@@ -1,50 +1,46 @@
-{% extends "default/head.html" %}
-
-
 {% block css %}
-    <link rel="stylesheet" href="/static/css/style.default.css" id="theme-stylesheet"><!--登陆页js-->
-        <!-- Main File-->
-    <script src="/static/js/front.js"></script>
-    <script src="/static/js/test.js"></script>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link rel="stylesheet" href="/static/backgroups/css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/static/backgroups/css/fontawesome-all.css">
 {% endblock %}
 
+
 {% block content %}
-
-    <div class="page login-page">
-      <div class="container d-flex align-items-center">
-        <div class="form-holder has-shadow">
-          <div class="row">
-            <!-- Logo & Information Panel-->
-            <div class="col-lg-6">
-              <div class="info d-flex align-items-center">
-                <div class="content">
-                  <div class="logo">
-                    <h1>欢迎登录</h1>
-                  </div>
-                  <p>百昌运维平台</p>
-                </div>
-              </div>
-            </div>
-            <!-- Form Panel    -->
-            <div class="col-lg-6 bg-white">
-              <div class="form d-flex align-items-center">
-                <div class="content">
-
-                    <form action="/accounts/register/" method="post" class="form-horizontal">
-                        {% csrf_token %}
-                        {{ forms.as_p }}
-                        <input type="submit">
-                    </form>
-                  <br />
-                  <small>已有账号?</small><a href="/accounts/login/" class="signup">&nbsp;登陆</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+	<div id="bg">
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+	</div>
+	<!-- //bg effect -->
+	<!-- title -->
+	<h1>DEVOPS</h1>
+	<!-- //title -->
+	<!-- content -->
+	<div class="sub-main-w3">
+		<form action="#" method="post">
+            			<h2>注册页面
+				<i class="fas fa-level-down-alt"></i>
+			</h2>
+            {% csrf_token %}
+			<div class="form-style-agile">
+                {{ forms.as_p }}
+			</div>
+			<input type="submit" value="提交">
+		</form>
+	</div>
+{% endblock %}
 
 
 
+{% block js %}
+	<script src="/static/backgroups/js/jquery-3.3.1.min.js"></script>
+	<script src="/static/backgroups/js/canva_moving_effect.js"></script>
 {% endblock %}

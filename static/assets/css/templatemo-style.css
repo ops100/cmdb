@@ -99,10 +99,11 @@ section {
     -ms-flex-shrink: 1;
     flex-shrink: 1;
     width: 100%;
+    background-color: #f0f2f5;
 }
 
 #main > .inner {
-    padding: 100px;
+    padding: 60px;
 }
 
 /* Banner */
@@ -930,21 +931,20 @@ section.buttons .container-fluid {
     transition: margin-left 0.5s ease, box-shadow 0.5s ease;
     background-color: #24252d;
     position: relative;
-    width: 420px;
+    width: 200px;
 }
 
 #sidebar > .inner {
     position: relative;
-    width: 420px;
+    width: 200px;
     padding: 0px 50px;
 }
 
 #sidebar > .inner > #search  {
     background-color: #2d2e39;
-    height: 100px;
-    width: 420px;
     display: inline-block;
-    margin-left: -50px;
+    margin-left: -70px;
+    text-align: center;
 }
 #sidebar > .inner > #search input {
 	width: 100%;
@@ -981,17 +981,17 @@ section.buttons .container-fluid {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     border: 0;
     display: block;
-    color: #fff;
-    height: 100px;
-    left: 420px;
-    line-height: 100px;
+    color: #9fa3a6;
+    height: 60px;
+    left: 200px;
+    line-height: 60px;
     outline: 0;
     overflow: hidden;
     position: absolute;
     text-align: center;
-    text-indent: 100px;
+    text-indent: 60px;
     top: 0;
-    width: 100px;
+    width: 60px;
     z-index: 10000;
 }
 
@@ -1017,7 +1017,7 @@ section.buttons .container-fluid {
 }
 
 #sidebar.inactive {
-    margin-left: -420px;
+    margin-left: -200px;
 }
 
 @media screen and (max-width: 1680px) {
@@ -1203,24 +1203,23 @@ section.buttons .container-fluid {
     display: -ms-flex;
     display: flex;
     position: relative;
-    background-color: #535ba0;
-    margin: -100px -100px 100px -100px;
+    background-color: #fff;
+    margin: -60px -60px 60px -60px;
 }
 
 #header .logo {
     text-align: right;
     display: inline-block;	
     width: 100%;
-    height: 100px;
-    line-height: 100px;
+    height: 60px;
+    line-height: 60px;
 }
 #header .logo a {
-	font-size: 36px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #fff;
+	color: #23272b;
 	font-weight: 700;
-	margin-right: 100px;
+	margin-right: 60px;
 }
 
 
@@ -1239,9 +1238,9 @@ section.buttons .container-fluid {
 
 
 /* Menu */
-#menu {
-	margin-top: 50px;
-}
+/*#menu {*/
+/*	margin-top: 50px;*/
+/*}*/
 
 #menu ul {
     -moz-user-select: none;
@@ -1331,7 +1330,7 @@ section.buttons .container-fluid {
 
 #menu > ul > li {
     border-top: solid 1px #1a1b20;
-    margin: 0.5em 0 0 0;
+    /*margin: 0.5em 0 0 0;*/
     padding: 0.5em 0 0 0;
 }
 
