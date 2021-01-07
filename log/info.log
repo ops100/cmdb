@@ -1,2 +1,83 @@
 [2021-01-05 10:49:25,598][Thread-1:3008][task_id:root][views.py:10][INFO][<WSGIRequest: GET '/'>]
 [2021-01-05 14:14:50,167][Thread-199:2672][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:50:52,148][Thread-64:2304][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 14:50:55,641][Thread-70:12144][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 14:50:56,267][Thread-72:3880][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 14:50:59,275][Thread-74:9120][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 14:51:24,190][Thread-78:17700][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:17:03,907][Thread-100:18048][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:20:49,536][Thread-105:3948][task_id:django.request][base.py:152][WARNING][Not Found: //static/img/p_big3.jpg]
+[2021-01-05 15:20:49,651][Thread-106:16432][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:22:57,407][Thread-132:10108][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:23:34,664][Thread-134:11184][task_id:django.security.csrf][csrf.py:160][WARNING][Forbidden (CSRF token missing or incorrect.): /test/test.html]
+[2021-01-05 15:23:34,720][Thread-135:2936][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:49:24,392][Thread-310:6532][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:50:48,135][Thread-1:10332][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:50:48,147][Thread-1:10332][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\PycharmProjects\cmdb\cmdb\views.py", line 13, in index
+    return render(request, 'index.html')
+  File "C:\Python27\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python27\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\Python27\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: 'extends' cannot appear more than once in the same template
+[2021-01-05 15:50:48,502][Thread-3:3628][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:55:20,815][Thread-30:3924][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:22,140][Thread-40:11676][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:22,641][Thread-51:9104][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:23,033][Thread-62:17812][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:23,701][Thread-73:18044][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:23,977][Thread-84:10892][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:24,236][Thread-95:18328][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:24,523][Thread-106:7260][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 15:55:24,763][Thread-117:636][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:08:19,002][Thread-180:18212][task_id:django.request][base.py:152][WARNING][Not Found: /register/]
+[2021-01-05 16:08:19,078][Thread-181:7192][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2021-01-05 16:15:12,614][Thread-230:3172][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:15:27,413][Thread-233:1576][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:16:51,713][Thread-240:7720][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:18:07,540][Thread-242:4272][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:18:08,941][Thread-244:18336][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:18:09,334][Thread-246:2952][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:18:38,614][Thread-248:244][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:18:44,736][Thread-250:5464][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:20:27,516][Thread-252:16532][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:20:29,332][Thread-254:18336][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:20:29,657][Thread-256:6108][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:20:29,934][Thread-258:5424][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:20:30,213][Thread-260:14328][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:20:30,530][Thread-262:15876][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:20:31,017][Thread-264:3320][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:22:29,933][Thread-266:15328][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:22:31,072][Thread-268:13528][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 16:23:13,868][Thread-270:16608][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-05 19:04:10,713][Thread-1:17728][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-06 10:13:22,778][Thread-5:18696][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-06 10:58:23,190][Thread-1:21444][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-06 16:34:46,523][Thread-3:19588][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-07 15:55:31,440][Thread-127:19788][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]

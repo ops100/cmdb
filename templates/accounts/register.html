@@ -1,22 +1,50 @@
-{% extends "head.html" %}
+{% extends "default/head.html" %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="/static/css/style.default.css" id="theme-stylesheet"><!--登陆页js-->
+        <!-- Main File-->
+    <script src="/static/js/front.js"></script>
+    <script src="/static/js/test.js"></script>
+{% endblock %}
+
 {% block content %}
 
-<div>
-<div class="modal-dialog" style="margin-top: 10%;">
+    <div class="page login-page">
+      <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+          <div class="row">
+            <!-- Logo & Information Panel-->
+            <div class="col-lg-6">
+              <div class="info d-flex align-items-center">
+                <div class="content">
+                  <div class="logo">
+                    <h1>欢迎登录</h1>
+                  </div>
+                  <p>百昌运维平台</p>
+                </div>
+              </div>
+            </div>
+            <!-- Form Panel    -->
+            <div class="col-lg-6 bg-white">
+              <div class="form d-flex align-items-center">
+                <div class="content">
 
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="modal-title text-center" id="myModalLabel">注册账号</h3>
+                    <form action="/accounts/register/" method="post" class="form-horizontal">
+                        {% csrf_token %}
+                        {{ forms.as_p }}
+                        <input type="submit">
+                    </form>
+                  <br />
+                  <small>已有账号?</small><a href="/accounts/login/" class="signup">&nbsp;登陆</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-        <form action="/accounts/login/" method="post" class="form-horizontal">
-            {% csrf_token %}
-            {{ forms.as_p }}
-            <input type="submit">
-        </form>
-        </div>
+      </div>
     </div>
-</div>
 
-</div>
+
+
 {% endblock %}
