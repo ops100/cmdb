@@ -257,3 +257,8 @@ ValueError: The view apps.accounts.views.Account_Set_password didn't return an H
 [2021-01-08 16:27:31,743][Thread-7:3420][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
 [2021-01-08 16:27:59,838][Thread-10:10388][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
 [2021-01-08 16:28:20,783][Thread-11:10368][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-08 16:30:06,138][Thread-14:23136][task_id:django.request][base.py:152][WARNING][Not Found: /index.html]
+[2021-01-08 16:30:54,095][Thread-15:21420][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-08 16:30:54,451][Thread-17:22848][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-08 16:30:54,683][Thread-19:18312][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-08 16:31:22,413][Thread-21:24820][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
