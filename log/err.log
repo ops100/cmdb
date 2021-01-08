@@ -121,3 +121,10 @@ Traceback (most recent call last):
   File "C:\Python27\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
     return Database.Cursor.execute(self, query, params)
 IntegrityError: column username is not unique
+[2021-01-07 20:34:59,226][Thread-35:12720][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /accounts/set_password/]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.accounts.views.Account_Set_password didn't return an HttpResponse object. It returned None instead.

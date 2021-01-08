@@ -58,11 +58,14 @@ def Account_Set_password(request):
             password = forms.cleaned_data['password']
             try:
                 user = User.objects.get(username=username)
+                print("username: %s,pass: %s" % (user,password))
                 if user:
-                    user.set_password(password=password)
+                    user.set_password(password)
                     user.save()
+                    print("密码修改成功！")
                     return redirect('/accounts/login/')
-            except:
+            except Exception as e:
+                print(e)
                 return HttpResponse("用户不存在")
 
 def Account_Logout(request):
