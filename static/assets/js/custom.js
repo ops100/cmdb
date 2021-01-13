@@ -84,7 +84,7 @@
 				});
 
 	// Sidebar.
-		var $sidebar = $('#sidebar'),
+		var $sidebar = $('.sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
 
 		// Inactive by default on <= large.
@@ -99,21 +99,15 @@
 		// Hack: Workaround for Chrome/Android scrollbar position bug.
 			if (browser.os == 'android'
 			&&	browser.name == 'chrome')
-				$('<style>#sidebar .inner::-webkit-scrollbar { display: none; }</style>')
+				$('<style>.sidebar .inner::-webkit-scrollbar { display: none; }</style>')
 					.appendTo($head);
 
 		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
-				.appendTo($sidebar)
+			$('<a href=".sidebar" class="toggle">Toggle</a>')
+				.appendTo(".main")
 				.on('click', function(event) {
-
-					// Prevent default.
-						event.preventDefault();
-						event.stopPropagation();
-
-					// Toggle.
-						$sidebar.toggleClass('inactive');
-
+						// $sidebar.toggle(".sidebar")
+						$sidebar.toggleClass("sidebarwidth")
 				});
 
 		// Events.
