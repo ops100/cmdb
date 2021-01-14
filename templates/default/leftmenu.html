@@ -1,42 +1,91 @@
 {% extends "default/head.html" %}
 
-
 {% block cssmenu %}
-    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="/static/assets/css/fontawesome.css">
-    <link rel="stylesheet" href="/static/assets/css/templatemo-style.css">
-    <link rel="stylesheet" href="/static/assets/css/owl.css">
-
+    <link href="/static/css/base.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
 {% endblock %}
 
-
-
-
-
-
 {% block contentmenu %}
-<!-- Wrapper -->
-    <div id="wrapper">
+<!-- Header -->
+<div class="top">
+    <div>
+        <div class="tl">
+            <img class="img" src="/static/images/logo.png">
+            <a>百昌运维平台</a>
+        </div>
+        <div>
+            <a class="switch"></a>
+        </div>
+        <div class="tr">
+        {% if user.username %}
+            <a> 用户：{{user.username}} | </a>
+           <a href="/accounts/logout/">EXIT</a>
+        {% else %}
+            <a href="/accounts/login/">未登陆状态</a>
+        {% endif %}
+        </div>
+    </div>
+</div>
 
+<!-- leftmenu -->
+    <div class="content">
+              <!-- Sidebar -->
+                <div id="sidebar" class="sidebar sm">
+                    <!-- Search Box -->
+                    <ul id="search"></ul>
+                    <!-- Menu -->
+                    <nav id="menu">
+                      <ul>
+                        <li><a href="#">工作台</a></li>
+                        <li><a href="#">主机管理</a></li>
+                        <li>
+                          <u><span class="opener" href="#">批量执行</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">应用管理</a></li>
+                            <li><a href="#">发布申请</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <u><span class="opener" href="#">应用发布</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">应用管理</a></li>
+                            <li><a href="#">发布申请</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">任务计划</a></li>
+                        <li>
+                          <u><span class="opener" href="#">配置中心</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">环境配置</a></li>
+                            <li><a href="#">服务配置</a></li>
+                            <li><a href="#">应用配置</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">监控中心</a></li>
+                        <li>
+                          <u><span class="opener" href="#">报警中心</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">报警历史</a></li>
+                            <li><a href="#">报警联系人</a></li>
+                            <li><a href="#">报警联系组</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <u><span class="opener" href="#">系统管理</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">账户管理</a></li>
+                            <li><a href="#">角色管理</a></li>
+                            <li><a href="#">系统设置</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
           <!-- Main -->
-            <div id="main">
-                    {% block content %}
-              <div class="inner">
+        <div class="main">
+        {% block content %}
 
-                <!-- Header -->
-                <header id="header">
-                  <div class="logo">
-                      {% if user.username %}
-                         用户：{{user.username}} | <a href="/accounts/logout/">exit</a>
-                      {% else %}
-                          <a href="/accounts/login/">未登陆状态</a>
-                      {% endif %}
-
-                  </div>
-                </header>
-
+             <div class="inner">
                 <!-- Banner -->
                 <section class="main-banner">
                   <div class="container-fluid">
@@ -61,119 +110,13 @@
                   </div>
                 </section>
               </div>
-                                {% endblock %}
-            </div>
-
-          <!-- Sidebar -->
-            <div id="sidebar">
-
-              <div class="inner">
-
-                <!-- Search Box -->
-                <ul id="search">
-                        <u>
-                            <img src="/static/images/logo.png" alt="Logo" style=" width: 80px;display: inline">
-                        </u>
-                        <u>
-                            <a style="color: #9fcdff;font-size: large;display: inline-block;margin: 0 auto;">百昌运维平台</a>
-                        </u>
-
-
-                </ul>
-
-                <!-- Menu -->
-                <nav id="menu">
-                  <ul>
-                    <li><a href="#">工作台</a></li>
-                    <li><a href="#">主机管理</a></li>
-                    <li>
-                      <span class="opener">批量执行</span>
-                      <ul>
-                        <li><a href="#">应用管理</a></li>
-                        <li><a href="#">发布申请</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="opener">应用发布</span>
-                      <ul>
-                        <li><a href="#">应用管理</a></li>
-                        <li><a href="#">发布申请</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">任务计划</a></li>
-                    <li>
-                      <span class="opener">配置中心</span>
-                      <ul>
-                        <li><a href="#">环境配置</a></li>
-                        <li><a href="#">服务配置</a></li>
-                        <li><a href="#">应用配置</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">监控中心</a></li>
-                    <li>
-                      <span class="opener">报警中心</span>
-                      <ul>
-                        <li><a href="#">报警历史</a></li>
-                        <li><a href="#">报警联系人</a></li>
-                        <li><a href="#">报警联系组</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <span class="opener">系统管理</span>
-                      <ul>
-                        <li><a href="#">账户管理</a></li>
-                        <li><a href="#">角色管理</a></li>
-                        <li><a href="#">系统设置</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-
-                <!-- Featured Posts -->
-                <div class="featured-posts">
-                  <div class="heading">
-                    <h2>Featured Posts</h2>
-                  </div>
-                  <div class="owl-carousel owl-theme">
-                    <a href="#">
-                      <div class="featured-item">
-                        <img src="/static/assets/images/featured_post_01.jpg" alt="featured one">
-                        <p>Aliquam egestas</p>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="featured-item">
-                        <img src="/static/assets/images/featured_post_01.jpg" alt="featured two">
-                        <p>Donec</p>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="featured-item">
-                        <img src="/static/assets/images/featured_post_01.jpg" alt="featured three">
-                        <p>Suspendisse</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-
-
-              </div>
-            </div>
-
+        {% endblock %}
+        </div>
     </div>
+
 {% endblock %}
 
+{% block jsmenu %}
+    <script src="/static/js/main.js"></script>
 
-
-
-
-{% block js %}
-    <script src="/static/vendor/jquery/js/jquery-3.5.1.js"></script>
-    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/assets/js/browser.min.js"></script>
-    <script src="/static/assets/js/breakpoints.min.js"></script>
-    <script src="/static/assets/js/transition.js"></script>
-    <script src="/static/assets/js/owl-carousel.js"></script>
-    <script src="/static/assets/js/custom.js"></script>
 {% endblock %}
