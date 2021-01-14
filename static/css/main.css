@@ -1,47 +1,48 @@
-html{
-    padding: 0;
-}
-.display{display: block;}
-.top{
-    background-color: #cce5ff;
-    min-width: 1200px;
-    width: 100%;
-    line-height: 30px;
-    overflow: hidden;
-    font-size: 12px;
-    font-weight: bold;
-}
-.width{
-    width: 1200px;
-    margin: 0 auto;
-}
-.height{
-
-}
-.top>div{width: 1200px;margin: 0 auto;color: #9fcdff}
-.top>div>.tl{float: left;}
-.top>div>.tr{float: right;}
-.top>div>.tl>img {border-radius: 8px;height:20px;margin: 2px auto;}
-
-.content{
-    width: 1200px;
-    margin: 0 auto;
-    height: 130vh;
-    background-color: #818182;
+.main-banner {
+    text-align: center;
 }
 
-.sidebar{
-    width: 200px;
-    height: 100%;
-    background-color: #007bff;
-    float: left;
+
+/* Banner */
+.main-banner .container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.main-banner .banner-content {
+	background-image: url(/static/images/main-banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.main {
-    /*background-color: #818182;*/
-    /*float: right;*/
-    float: left;
-    /*width:100%;*/
-    margin: 20px auto;
+.main-banner .banner-content .banner-caption {
+    max-width: 450px;
+	background-color: rgba(250,250,250,0.95);
+	margin: 50px auto;
+	padding: 50px;
 }
 
+.main-banner .banner-content .banner-caption h4 {
+	font-size: 38px;
+	font-weight: 700;
+	color: #31323a;
+	letter-spacing: 0.25px;
+	margin: 0px;
+}
+
+.main-banner .banner-content .banner-caption em {
+	font-style: normal;
+	color: #535ba0;
+}
+
+.main-banner .banner-content .banner-caption span {
+	font-size: 15px;
+	color: #aaaaaa;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.main-banner .banner-content .banner-caption p {
+	margin-bottom: 30px;
+}

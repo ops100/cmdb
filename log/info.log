@@ -377,80 +377,34 @@ ValueError: The view apps.accounts.views.Account_Set_password didn't return an H
 [2021-01-13 17:14:14,051][Thread-92:33544][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
 [2021-01-13 22:15:47,014][Thread-105:27932][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
 [2021-01-13 22:15:54,669][Thread-105:27932][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
-[2021-01-13 23:21:36,300][MainThread:10204][task_id:django.utils.autoreload][autoreload.py:612][INFO][Watching for file changes with StatReloader]
-[2021-01-13 23:23:28,831][MainThread:8828][task_id:django.utils.autoreload][autoreload.py:612][INFO][Watching for file changes with StatReloader]
-[2021-01-13 23:25:04,227][MainThread:3536][task_id:django.utils.autoreload][autoreload.py:612][INFO][Watching for file changes with StatReloader]
-[2021-01-13 23:25:08,237][Thread-4:3060][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
-[2021-01-13 23:25:10,985][Thread-4:3060][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
-[2021-01-13 23:25:11,554][Thread-4:3060][task_id:django.request][log.py:224][ERROR][Internal Server Error: /]
-Traceback (most recent call last):
-  File "d:\Python3.8\lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
-    return parser.libraries[name]
-KeyError: 'staticfiles'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "d:\Python3.8\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "d:\Python3.8\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "d:\Python3.8\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
-    return view_func(request, *args, **kwargs)
-  File "D:\PycharmProjects\cmdb\cmdb\views.py", line 13, in index
-    return render(request, 'index.html')
-  File "d:\Python3.8\lib\site-packages\django\shortcuts.py", line 19, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "d:\Python3.8\lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "d:\Python3.8\lib\site-packages\django\template\backends\django.py", line 61, in render
-    return self.template.render(context)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 170, in render
-    return self._render(context)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 162, in _render
-    return self.nodelist.render(context)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 938, in render
-    bit = node.render_annotated(context)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 905, in render_annotated
-    return self.render(context)
-  File "d:\Python3.8\lib\site-packages\django\template\loader_tags.py", line 150, in render
-    return compiled_parent._render(context)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 162, in _render
-    return self.nodelist.render(context)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 938, in render
-    bit = node.render_annotated(context)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 905, in render_annotated
-    return self.render(context)
-  File "d:\Python3.8\lib\site-packages\django\template\loader_tags.py", line 127, in render
-    compiled_parent = self.get_parent(context)
-  File "d:\Python3.8\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
-    return self.find_template(parent, context)
-  File "d:\Python3.8\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
-    template, origin = context.template.engine.find_template(
-  File "d:\Python3.8\lib\site-packages\django\template\engine.py", line 125, in find_template
-    template = loader.get_template(name, skip=skip)
-  File "d:\Python3.8\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
-    return Template(
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 155, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
-    return parser.parse()
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 478, in parse
-    raise self.error(token, e)
-  File "d:\Python3.8\lib\site-packages\django\template\base.py", line 476, in parse
-    compiled_result = compile_func(self, token)
-  File "d:\Python3.8\lib\site-packages\django\template\defaulttags.py", line 1091, in load
-    lib = find_library(parser, name)
-  File "d:\Python3.8\lib\site-packages\django\template\defaulttags.py", line 1036, in find_library
-    raise TemplateSyntaxError(
-django.template.exceptions.TemplateSyntaxError: 'staticfiles' is not a registered tag library. Must be one of:
-admin_list
-admin_modify
-admin_urls
-cache
-i18n
-l10n
-log
-static
-tz
-[2021-01-13 23:25:49,841][Thread-4:3060][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 10:00:20,262][MainThread:2480][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2021-01-14 10:00:43,664][Thread-1:30692][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2021-01-14 10:00:48,650][Thread-1:30692][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 10:04:15,660][Thread-1:30692][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 10:05:00,310][Thread-1:30692][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 10:08:28,368][Thread-1:30692][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 10:38:20,892][Thread-9:13720][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 14:07:56,530][Thread-44:33968][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 14:10:02,745][Thread-45:19932][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 14:35:39,902][Thread-190:34920][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 16:02:19,482][Thread-276:34356][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2021-01-14 16:02:41,898][Thread-275:32288][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 16:04:01,013][Thread-276:34356][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 16:34:41,927][Thread-365:33744][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 19:36:38,626][Thread-618:27940][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:32:22,765][Thread-727:27356][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:06,237][Thread-739:22644][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:10,279][Thread-741:34000][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:10,984][Thread-758:32164][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:11,952][Thread-773:26392][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:12,645][Thread-790:12260][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:36,189][Thread-805:22152][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:37,695][Thread-822:34668][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:34:38,233][Thread-839:35060][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:35:05,958][Thread-856:30832][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:35:06,748][Thread-860:32676][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:35:07,181][Thread-856:30832][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:35:07,484][Thread-859:25412][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:35:07,660][Thread-860:32676][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:35:07,883][Thread-859:25412][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
+[2021-01-14 20:35:08,068][Thread-856:30832][task_id:root][views.py:12][INFO][<WSGIRequest: GET '/'>]
