@@ -1,8 +1,8 @@
 {% extends "default/head.html" %}
 
 {% block cssmenu %}
+    <link href="/static/css/base.css" rel="stylesheet">
     <link href="/static/css/main.css" rel="stylesheet">
-
 {% endblock %}
 
 {% block contentmenu %}
@@ -13,9 +13,13 @@
             <img class="img" src="/static/images/logo.png">
             <a>百昌运维平台</a>
         </div>
+        <div>
+            <a class="switch"></a>
+        </div>
         <div class="tr">
         {% if user.username %}
-           <a href="/accounts/logout/"> 用户：{{user.username}} | exit</a>
+            <a> 用户：{{user.username}} | </a>
+           <a href="/accounts/logout/">EXIT</a>
         {% else %}
             <a href="/accounts/login/">未登陆状态</a>
         {% endif %}
@@ -26,23 +30,93 @@
 <!-- leftmenu -->
     <div class="content">
               <!-- Sidebar -->
-                <div class="sidebar">
+                <div id="sidebar" class="sidebar sm">
                     <!-- Search Box -->
-                    <ul id="search">
-                            <u>
-                                <a style="color: #9fcdff;display: inline;margin: 0 auto;">百昌运维</a>
-                            </u>
-                    </ul>
+                    <ul id="search"></ul>
+                    <!-- Menu -->
+                    <nav id="menu">
+                      <ul>
+                        <li><a href="#">工作台</a></li>
+                        <li><a href="#">主机管理</a></li>
+                        <li>
+                          <u><span class="opener" href="#">批量执行</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">应用管理</a></li>
+                            <li><a href="#">发布申请</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <u><span class="opener" href="#">应用发布</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">应用管理</a></li>
+                            <li><a href="#">发布申请</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">任务计划</a></li>
+                        <li>
+                          <u><span class="opener" href="#">配置中心</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">环境配置</a></li>
+                            <li><a href="#">服务配置</a></li>
+                            <li><a href="#">应用配置</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">监控中心</a></li>
+                        <li>
+                          <u><span class="opener" href="#">报警中心</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">报警历史</a></li>
+                            <li><a href="#">报警联系人</a></li>
+                            <li><a href="#">报警联系组</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <u><span class="opener" href="#">系统管理</span></u>
+                          <ul class="disconfnone">
+                            <li><a href="#">账户管理</a></li>
+                            <li><a href="#">角色管理</a></li>
+                            <li><a href="#">系统设置</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
                 </div>
           <!-- Main -->
         <div class="main">
-                <a href="#" class="toggle">Toggle</a>
+
                 <a>主体内容</a>
+             <div class="inner">
+
+                <!-- Banner -->
+                <section class="main-banner">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="banner-content">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="banner-caption">
+                                <h4>Hello, this is your <em>Ramayana</em> Theme.</h4>
+                                <span>AWESOME HTML5 &amp; CSS3 TEMPLATE</span>
+                                <p>Do you know that <strong>Ramayana</strong> is a free to use Bootstrap 4 CSS template by <strong>templatemo</strong>? You can edit and add more pages as you wanted for your personal or corporate websites.</p>
+                                <div class="primary-button">
+                                  <a href="#">Read More</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
         </div>
     </div>
 
 {% endblock %}
 
 {% block jsmenu %}
-    <script src="/static/js/test.js"></script>
+    <script src="/static/js/main.js"></script>
+
 {% endblock %}
