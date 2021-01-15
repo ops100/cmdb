@@ -6,7 +6,9 @@ li{
     list-style:none;
     text-align: center;
 }
-
+a{
+    color:#5a6268;
+}
 .width{    width: 1200px;    margin: 0 auto;}
 
 .body{
