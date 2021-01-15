@@ -2,15 +2,19 @@
 
 {% block cssmenu %}
     <link href="/static/css/base.css" rel="stylesheet">
+    <link href="/static/css/top.css" rel="stylesheet">
+    <link href="/static/css/left.css" rel="stylesheet">
     <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/right.css" rel="stylesheet">
 {% endblock %}
 
-{% block contentmenu %}
+{% block topmenu %}
 <!-- Header -->
 <div class="top">
     <div>
         <div class="tl">
-            <img class="img" src="/static/images/logo.png">
+{#            <img class="img" src="/static/images/logo.png">#}
+            <img class="img" src="/static/images/favicon.ico">
             <a>百昌运维平台</a>
         </div>
         <div>
@@ -26,97 +30,91 @@
         </div>
     </div>
 </div>
-
-<!-- leftmenu -->
-    <div class="content">
-              <!-- Sidebar -->
-                <div id="sidebar" class="sidebar sm">
-                    <!-- Search Box -->
-                    <ul id="search"></ul>
-                    <!-- Menu -->
-                    <nav id="menu">
-                      <ul>
-                        <li><a href="#">工作台</a></li>
-                        <li><a href="#">主机管理</a></li>
-                        <li>
-                          <u><span class="opener" href="#">批量执行</span></u>
-                          <ul class="disconfnone">
-                            <li><a href="#">应用管理</a></li>
-                            <li><a href="#">发布申请</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <u><span class="opener" href="#">应用发布</span></u>
-                          <ul class="disconfnone">
-                            <li><a href="#">应用管理</a></li>
-                            <li><a href="#">发布申请</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">任务计划</a></li>
-                        <li>
-                          <u><span class="opener" href="#">配置中心</span></u>
-                          <ul class="disconfnone">
-                            <li><a href="#">环境配置</a></li>
-                            <li><a href="#">服务配置</a></li>
-                            <li><a href="#">应用配置</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">监控中心</a></li>
-                        <li>
-                          <u><span class="opener" href="#">报警中心</span></u>
-                          <ul class="disconfnone">
-                            <li><a href="#">报警历史</a></li>
-                            <li><a href="#">报警联系人</a></li>
-                            <li><a href="#">报警联系组</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <u><span class="opener" href="#">系统管理</span></u>
-                          <ul class="disconfnone">
-                            <li><a href="#">账户管理</a></li>
-                            <li><a href="#">角色管理</a></li>
-                            <li><a href="#">系统设置</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </nav>
-                </div>
-          <!-- Main -->
-        <div class="main">
-        {% block content %}
-
-             <div class="inner">
-                <!-- Banner -->
-                <section class="main-banner">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="banner-content">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="banner-caption">
-                                <h4>Hello, this is your <em>Ramayana</em> Theme.</h4>
-                                <span>AWESOME HTML5 &amp; CSS3 TEMPLATE</span>
-                                <p>Do you know that <strong>Ramayana</strong> is a free to use Bootstrap 4 CSS template by <strong>templatemo</strong>? You can edit and add more pages as you wanted for your personal or corporate websites.</p>
-                                <div class="primary-button">
-                                  <a href="#">Read More</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-        {% endblock %}
-        </div>
-    </div>
-
 {% endblock %}
+
+
+
+<!-- left -->
+    {% block left %}
+        <div id="sidebar" class="sidebar sm">
+            <!-- Search Box -->
+            <nav id="search">
+                <div>
+                    <img class="img" src="/static/images/logo.png">
+
+                </div>
+    {#                            <span>百昌科技</span>#}
+            </nav>
+            <!-- Menu -->
+            <nav id="menu">
+              <ul>
+                <li><a href="#">工作台</a></li>
+                <li><a href="#">主机管理</a></li>
+                <li>
+                  <u><span class="opener" href="#">批量执行</span></u>
+                  <ul class="disconfnone">
+                    <li><a href="#">应用管理</a></li>
+                    <li><a href="#">发布申请</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <u><span class="opener" href="#">应用发布</span></u>
+                  <ul class="disconfnone">
+                    <li><a href="#">应用管理</a></li>
+                    <li><a href="#">发布申请</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">任务计划</a></li>
+                <li>
+                  <u><span class="opener" href="#">配置中心</span></u>
+                  <ul class="disconfnone">
+                    <li><a href="#">环境配置</a></li>
+                    <li><a href="#">服务配置</a></li>
+                    <li><a href="#">应用配置</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">监控中心</a></li>
+                <li>
+                  <u><span class="opener" href="#">报警中心</span></u>
+                  <ul class="disconfnone">
+                    <li><a href="#">报警历史</a></li>
+                    <li><a href="#">报警联系人</a></li>
+                    <li><a href="#">报警联系组</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <u><span class="opener" href="#">系统管理</span></u>
+                  <ul class="disconfnone">
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">角色管理</a></li>
+                    <li><a href="#">系统设置</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+        </div>
+    {% endblock %}
+
+<!-- main -->
+    {% block main %}
+        <div class="main">
+
+            <h1>main</h1>
+        </div>
+    {% endblock %}
+
+<!-- right -->
+{#    {% block right %}#}
+{#        <div class="right">#}
+{#            <div>#}
+{#                <h1>main right</h1>#}
+{#            </div>#}
+{#        </div>#}
+{#    {% endblock %}#}
+
+
+
 
 {% block jsmenu %}
     <script src="/static/js/main.js"></script>
-
 {% endblock %}

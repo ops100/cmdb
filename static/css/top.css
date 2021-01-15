@@ -1,0 +1,30 @@
+.top{
+    background-color: #999999;
+    min-width: 1200px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    /*box-shadow: 0px 5px 5px ;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.top>div{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.top>div>.tl{float: left;width: 200px;display: inline}
+.top>div>div{display: inline}
+.top>div>.tr{float: right;}
+.top>div>.tl>img {border-radius: 8px;height:20px;margin: 2px auto;}
+.top>div>.tl>a{color: black}
+.switch:before {
+    content: ">>";
+    position: relative;
+    color: #ffe8a1;
+    top: 30px;
+    left: -200px;
+    z-index: 10000;
+}

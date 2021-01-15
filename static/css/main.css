@@ -1,48 +1,47 @@
-.main-banner {
-    text-align: center;
+/*.inner{*/
+/*	position: relative;*/
+/*}*/
+
+.main {
+	float: left;
+	width: 1000px;
+	min-width: 1000px;
+	height: 100%;
+	background-color: #b9bbbe;
+	border: 1px solid #e8e8e8;
+	font-size:0;
 }
 
-
-/* Banner */
-.main-banner .container-fluid {
-	padding-left: 0px;
-	padding-right: 0px;
+.ml-0,.ml-1,.ml-2{
+	padding: 12px 12px 0;
 }
-.main-banner .banner-content {
-	background-image: url(/static/images/main-banner.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.main-banner .banner-content .banner-caption {
-    max-width: 450px;
-	background-color: rgba(250,250,250,0.95);
-	margin: 50px auto;
-	padding: 50px;
-}
-
-.main-banner .banner-content .banner-caption h4 {
-	font-size: 38px;
-	font-weight: 700;
-	color: #31323a;
-	letter-spacing: 0.25px;
-	margin: 0px;
-}
-
-.main-banner .banner-content .banner-caption em {
-	font-style: normal;
-	color: #535ba0;
-}
-
-.main-banner .banner-content .banner-caption span {
-	font-size: 15px;
-	color: #aaaaaa;
-	letter-spacing: 0.5px;
+.ml-0>.title,.ml-1>.title,.ml-2>.title,.ml-2>div:nth-child(1){
+    background-color: #fff;
 	display: inline-block;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	border: 6px solid #b9bbbe;
+	padding: 0px 2px;
+	font-size: 14px;
+}
+.ml-0>.title{
+	width: 25%;
+	height: 120px;
+}
+.ml-1>.title{
+	width: 100%;
+	height: 360px;
+}
+.ml-2 div:nth-child(1){
+	width: 60%;
+	height: 360px;
+}
+.ml-2 div:nth-child(2){
+	width: 40%;
+	height: 360px;
 }
 
-.main-banner .banner-content .banner-caption p {
-	margin-bottom: 30px;
+.ant-title{
+	text-align: center;
+	color: #212529;
+	border-bottom: 2px solid #b9bbbe;
 }
+
