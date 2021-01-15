@@ -1,7 +1,7 @@
 
 .sidebar{
     height: 100%;
-    background-color: #212529;
+    background-color: #fff;
 
     float: left;
     /*box-shadow: 2px 0px 5px #23272b;*/
@@ -48,7 +48,7 @@
     display: none;
 }
 #menu>ul>li>a:hover,.opener:hover{
-    background-color: #007bff;
+    background-color: #abdde5;
 }
 #menu>ul>li>a,.opener{
 	width:100px;
@@ -56,7 +56,7 @@
     transition:color 1s;
 	-webkit-transition:color 1s; /* Safari */
     list-style:none;
-    color: #fff;
+    color: #212529;
     /*text-decoration:underline;*/
 }
 #menu>ul>li>a:hover,#menu>ul>li>ul>li>a:hover,.opener:hover

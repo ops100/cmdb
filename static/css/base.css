@@ -9,12 +9,15 @@ li{
 
 .width{    width: 1200px;    margin: 0 auto;}
 
-
+.body{
+    background: url(/static/images/bg.png) no-repeat top;
+}
 .content{
     width: 1200px;
     min-height: 1080px;
     margin: 0 auto;
     height: 130vh;
+
 
 }
 
