@@ -8,86 +8,14 @@ li{
 }
 
 .width{    width: 1200px;    margin: 0 auto;}
-.top{background-color: #ffeeba;    min-width: 1200px;    width: 100%;    line-height: 30px;     font-size: 12px;    font-weight: bold;}
-
-.top>div{width: 1200px;margin: 0 auto;}
-.top>div>.tl{float: left;width: 200px;display: inline}
-.top>div>div{display: inline}
-.top>div>.tr{float: right;}
-.top>div>.tl>img {border-radius: 8px;height:20px;margin: 2px auto;}
-.top>div>.tl>a{color: black}
-
-.switch:before {
-    content: ">>";
-    position: relative;
-    color: #ffe8a1;
-    top: 30px;
-    left: -200px;
-}
 
 
 .content{
     width: 1200px;
+    min-height: 1080px;
     margin: 0 auto;
     height: 130vh;
-    background-color: #818182;
-}
-
-
-.sidebar{
-    height: 100%;
-    background-color: #24252d;
-    float: left;
-}
-.sm{width: 200px;}
-
-
-.main {
 
 }
 
-
-#menu{    width: 100%;}
-#menu>ul{
-    line-height: 60px;
-}
-#menu>ul>li{
-    border-radius:6px;
-    -moz-border-radius:12px; /* 老的 Firefox */
-      border-style:solid;
-  border-bottom:1px solid #3d4449;
-
-}
-#menu>ul>li>ul>li{
-    background-color: #24252d;
-}
-.disconfnone{
-    display: none;
-}
-#menu>ul>li>a:hover,.opener:hover{
-    background-color: #007bff;
-}
-#menu>ul>li>a,.opener{
-	width:100px;
-	height:100px;
-    transition:color 1s;
-	-webkit-transition:color 1s; /* Safari */
-    list-style:none;
-    color: #fff;
-}
-#menu>ul>li>a:hover,#menu>ul>li>ul>li>a:hover,.opener:hover
-{
-    color:#c69500;
-}
-
-u{
-    width: 200px;
-    display: block;
-    cursor:pointer;
-
-}
-
-#menu>ul>li>ul>li{
-    background: #23272b;
-}
 

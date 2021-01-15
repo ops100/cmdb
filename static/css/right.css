@@ -1,0 +1,8 @@
+.right{
+	 float: right;
+	background-color: #ffe8a1;
+	width: 100px;
+	height: 100%;
+	max-width: 100px;
+	box-shadow: 2px 0px 5px #23272b;
+}

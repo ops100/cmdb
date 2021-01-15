@@ -1,0 +1,76 @@
+
+.sidebar{
+    height: 100%;
+    background-color: #212529;
+
+    float: left;
+    /*box-shadow: 2px 0px 5px #23272b;*/
+}
+
+#search{
+    height: 80px;
+    max-height: 80px;
+    border-bottom: 2px solid #c69500;
+}
+#search>div{
+
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+}
+#search>div>span{
+
+}
+#search>div>img{
+    width: 200px;
+    height: 60px;
+    opacity:0.2;
+    filter:alpha(opacity=20); /* For IE8 and earlier */
+}
+.sm{width: 200px;}
+
+
+#menu{    width: 100%;}
+#menu>ul{
+    line-height: 60px;
+}
+#menu>ul>li{
+    border-radius:6px;
+    -moz-border-radius:12px; /* 老的 Firefox */
+  /*border-style:solid;*/
+  border-bottom:1px solid #b9bbbe;
+
+}
+#menu>ul>li>ul>li{
+    background-color: #24252d;
+}
+.disconfnone{
+    display: none;
+}
+#menu>ul>li>a:hover,.opener:hover{
+    background-color: #007bff;
+}
+#menu>ul>li>a,.opener{
+	width:100px;
+	height:100px;
+    transition:color 1s;
+	-webkit-transition:color 1s; /* Safari */
+    list-style:none;
+    color: #fff;
+    /*text-decoration:underline;*/
+}
+#menu>ul>li>a:hover,#menu>ul>li>ul>li>a:hover,.opener:hover
+{
+    color:#c69500;
+}
+
+#menu>ul>li>u{
+    width: 200px;
+    display: block;
+    cursor:pointer;
+
+}
+
+#menu>ul>li>ul>li{
+    background: #23272b;
+}
